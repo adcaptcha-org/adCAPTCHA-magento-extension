@@ -1,0 +1,1 @@
+# adCAPTCHA for Magento

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2024 adCAPTCHA. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <adcaptcha>
+            <frontend>
+                <enabled>0</enabled>
+            </frontend>
+            <adminhtml>
+                <enabled>0</enabled>
+            </adminhtml>
+        </adcaptcha>
+    </default>
+</config>

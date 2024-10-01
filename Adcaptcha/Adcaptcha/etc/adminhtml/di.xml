@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2024 adCAPTCHA. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Adcaptcha\Adcaptcha\Observer\Validate\Admin">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="actions" xsi:type="array">
+                    <item name="login" xsi:type="string">Magento\Backend\Controller\Adminhtml\Index\Index</item>
+                    <item name="password" xsi:type="string">Magento\User\Controller\Adminhtml\Auth\Forgotpassword</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="Adcaptcha\Adcaptcha\Model\ConfigProviderInterface" type="Adcaptcha\Adcaptcha\Model\ConfigProvider\Adminhtml" />
+</config>

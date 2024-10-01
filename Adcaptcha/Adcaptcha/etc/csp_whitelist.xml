@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © 2024 adCAPTCHA. All rights reserved.
+ */
+-->
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="frame-src">
+            <values>
+                <value id="adcaptcha" type="host">widget.adcaptcha.com</value>
+            </values>
+        </policy>
+        <policy id="script-src">
+            <values>
+                <value id="adcaptcha" type="host">widget.adcaptcha.com</value>
+            </values>
+        </policy>
+        <policy id="connect-src">
+            <values>
+                <value id="adcaptcha-api" type="host">https://api.adcaptcha.com</value>
+                <value id="adcaptcha-assets" type="host">https://assets.adcaptcha.com</value>
+            </values>
+        </policy>
+        <policy id="img-src">
+            <values>
+                <value id="adcaptcha-assets" type="host">https://assets.adcaptcha.com</value>
+            </values>
+        </policy>
+        <policy id="media-src">
+            <values>
+                <value id="adcaptcha-assets" type="host">https://assets.adcaptcha.com</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>

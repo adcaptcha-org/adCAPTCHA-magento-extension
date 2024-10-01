@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2024 adCAPTCHA. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_predispatch">
+        <observer name="adcaptcha_frontend_server_validation" instance="Adcaptcha\Adcaptcha\Observer\Validate\Frontend" />
+    </event>
+</config>

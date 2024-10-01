@@ -1,0 +1,20 @@
+<?php /** @var \Adcaptcha\Adcaptcha\Block\Adcaptcha $block */ ?>
+<?php /** @var \Magento\Framework\Escaper $escaper */ ?>
+<div id="<?= $escaper->escapeHtmlAttr($block->getId()) ?>" class="adcaptcha" data-bind="scope:'adcaptcha'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+{
+    "#<?= $escaper->escapeHtmlAttr($block->getId()) ?>": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "adcaptcha": {
+                    "component": "Adcaptcha_Magento/js/view/adcaptcha",
+                    "action": "<?= $escaper->escapeJs($block->getAction()) ?>",
+                    "configSource": "adcaptchaConfig"
+                }
+            }
+        }
+    }
+}
+</script>

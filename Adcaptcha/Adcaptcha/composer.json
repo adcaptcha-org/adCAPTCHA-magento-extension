@@ -1,0 +1,26 @@
+{
+  "name": "adcaptcha/adcaptcha",
+  "description": "Secure your site. Elevate your brand. Boost Ad Revenue.",
+  "require": {
+    "php": "^8",
+    "magento/module-config": "*",
+    "magento/framework": "*"
+  },
+  "type": "magento2-module",
+  "version": "100.2.6",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Adcaptcha\\Adcaptcha\\": ""
+    }
+  },
+  "authors": [
+    {
+      "name": "adCAPTCHA",
+      "homepage": "https://adcaptcha.com/",
+      "role": "Developer"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2024 adCAPTCHA. All rights reserved.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="form.additional.info">
+            <block name="adcaptcha.contact" class="Adcaptcha\Adcaptcha\Block\Adcaptcha" ifconfig="adcaptcha/frontend/enabled">
+                <action method="setAction">
+                    <argument name="action" xsi:type="string">contact</argument>
+                </action>
+            </block>
+            <block class="Adcaptcha\Adcaptcha\Block\Adcaptcha\Config" template="Adcaptcha_Magento::adcaptcha/config.phtml" cacheable="false" ifconfig="adcaptcha/frontend/enabled" />
+        </referenceContainer>
+    </body>
+</page>
